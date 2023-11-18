@@ -1,0 +1,387 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 1.2rem;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+h2{
+    font-size: 1rem;
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+}
+p{
+    font-size: 10px;
+    color: hsl(0, 0%, 100%);
+}
+.section-p1{
+    padding: 30px 80px;
+}
+.section-p2{
+    padding: 30px 0px;
+}
+button{
+    cursor: pointer;
+    background-color:  hsl(176, 68%, 64%);
+    width: 150px;
+    border-radius: 20px;
+    border-color:  hsl(176, 68%, 64%);
+    height: 30px;
+    color: hsl(0, 0%, 100%);
+}
+body{
+    background-color: hsl(218, 28%, 13%);
+    font-family: 'Raleway', 'Open Sans';
+   
+}
+
+.header{
+    height: 40%;
+    padding-top: 10px;
+    align-items: center;
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    justify-content: space-between;
+}
+.header .menu ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+.menu li{
+    padding: 0 20px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+} 
+#intro{
+background-image: url("images\bg-curvy-desktop.png"); 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} 
+#intro img{
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+#intro h1,
+#intro p{
+    width: 350px;
+    text-align: center;
+    line-height: 1.2rem;
+    padding-bottom: 10px;
+
+}
+#boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+.box{
+    align-items: center;
+    padding: 20px 80px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.box img{
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    
+}
+.box h2,
+.box p{
+  width: 200px; 
+  padding-bottom: 5px;
+  text-align: center; 
+}
+
+#advert{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#advert img{
+    height: 300px;
+    padding:0 100px;
+}
+#advert div{
+    padding: 10px 180px 10px 10px;
+    align-items: flex-start;
+}
+#advert h1{
+    margin-top: 30px;
+    line-height: 1.7rem;
+}
+#advert p{
+    line-height: 0.9rem;
+}
+#advert h6 {
+    margin-top: 20px;
+}
+#advert h6 a{
+    text-decoration: none;
+    color: hsl(176, 68%, 64%);
+}
+ 
+#D-three {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box1{
+    width: 200px;
+    padding: 20px;
+    background-color: hsl(219, 30%, 18%);
+    border-radius: 12px;
+    margin: 12px
+}
+.box1 .new {
+    margin-top: 15px;
+    display: flex;
+}
+ .box1 .new img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+}
+
+.new h2{
+    font-size: 0.7rem;
+}
+.new div{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#details{
+    background-color: hsl(219, 30%, 18%);
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    margin: 5px 400px;
+    transform: translateY(30%);
+}
+#details p{
+    font-size: 6px;
+}
+#details .ontop{
+    margin-top: 10px;
+    display: flex;
+}
+#details .ontop input {
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 7px;
+}
+#details .ontop button{
+    font-size: 10px;
+    width: 130px;
+}
+#foot{
+    background-color: hsl(216, 53%, 9%);
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.some img{
+    height: 40px;
+}
+.part,
+.part1{
+    display: flex;
+    justify-content: space-between;
+}
+.part p{
+    width: 200px;
+}
+.part img,
+.part1 img{
+    height: 10px;
+    padding: 0 10px;
+}
+.part1{
+    margin-top: 20px;
+}
+.part3 p{
+    margin-bottom: 5px;
+} 
+
+@media only screen and  (max-width: 799px) {
+    .section-p1{
+        padding: 10px 30px;
+    }
+    .header{
+        width: 50%;
+        overflow-y: hidden;
+    }
+    .header img{
+        height: 30px;
+        margin: 0 20px;
+    }
+    .header .menu ul{
+        right: 0;
+        margin-left: 10px;
+    }
+    .menu li{
+        padding: 0 10px;
+    }
+    #intro {
+       margin-right: 400px;
+    }
+    #boxes {
+        margin-right: 400px;
+    }
+    #advert {
+       flex-direction: column;
+       margin-right: 300px;
+    }
+    #advert img {
+        height: 200px;
+        padding: 0 0px;
+    }
+    #advert div {
+        padding: 10px 60px 10px 10px;
+        align-items: flex-start;
+    }
+        #D-three {
+           flex-direction: column;
+           padding-right: 400px;
+        }
+        .box1 {
+            width: 250px;
+        }
+        #details {
+            width: 300px;
+            height: 150px;
+            margin: 0px 50px 20px;
+            transform: translateY(30%);
+        }
+        #details h1{
+            margin-bottom: 10px;
+        }
+        #details .ontop {
+            margin-top: 30px;
+            display: flex;
+        }
+        #foot {
+            padding-top: 50px;
+            flex-wrap: wrap;
+            align-items: center;
+            padding-right: 400px;
+        }
+        .some img {
+            height: 30px;
+            margin-bottom: 20px;
+        }
+        .part img, .part1 img {
+            height: 11px;
+           
+        }
+        .part, .part1 {
+        margin-bottom: 20px;
+        }
+}
+@media  (max-width:380px) {
+    .header{
+        width: 80%;
+    }
+    .header img{
+        height: 15px;
+        margin: 0 20px;
+    }
+    .header .menu ul{
+        right: 0;
+        margin-right: 60px;
+    }
+    .menu li {
+        padding: 0 5px;
+        font-size: 9px;
+    }
+    #intro {
+        margin-left: 100px;
+     }
+     #intro img {
+        padding-bottom: 10px;
+        height: 100px;
+    }
+    #intro h1, #intro p {
+        width: 200px;
+        text-align: center;
+        line-height: 1.2rem;
+        padding-bottom: 10px;
+    }
+     #boxes {
+         margin-left: 100px;
+     }
+     #advert {
+        margin-left: 100px;
+     }
+     #advert img {
+         height: 180px;
+        margin-left: 50px;
+     }
+     #advert div {
+         padding: 10px 10px 10px 50px;
+         align-items: center;
+         width: 230px;
+     }
+         #D-three {
+            flex-direction: column;
+            margin-left: 100px;
+         }
+         .box1 {
+             width: 200px;
+         }
+         #details {
+             width: 200px;
+             height: 150px;
+             margin: 0px 20px 20px;
+             transform: translateY(30%);
+         }
+         #details h1{
+             margin-bottom: 10px;
+             font-size: 9px;
+         }
+         #details .ontop {
+             margin-top: 10px;
+             display: flex;
+             flex-direction: column;
+         }
+         #details .ontop button {
+            margin-top:10px;
+        }
+         #foot {
+             padding-top: 50px;
+             flex-wrap: wrap;
+             align-items: center;
+         }
+         .some img {
+             height: 30px;
+             margin-bottom: 20px;
+         }
+         .part img, .part1 img {
+             height: 11px;
+            
+         }
+         .part, .part1 {
+         margin-bottom: 20px;
+         }
+         .part3{
+            margin-bottom: 10px;
+         }
+}
